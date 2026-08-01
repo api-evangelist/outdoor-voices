@@ -1,7 +1,25 @@
 aid: outdoor-voices
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/outdoor-voices.png
 name: Outdoor Voices
-description: 'Outdoor Voices is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Outdoor Voices is an Austin-founded direct-to-consumer activewear and
+  athletic apparel brand designing clothing for everyday recreation — running, hiking,
+  studio workouts, and rest days — for women and men. The company sells exclusively
+  through its own Shopify-hosted e-commerce storefront and retail presence rather
+  than a public developer platform. It was surfaced as a portfolio company of GV
+  and added to the API Evangelist network. An enrichment pass found no first-party
+  public API, SDK, webhook, or developer surface: the site runs on Shopify commerce
+  infrastructure with only consumer-facing help, privacy, and terms pages.'
 url: https://raw.githubusercontent.com/api-evangelist/outdoor-voices/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Retail
+- Ecommerce
+- Activewear
+- Apparel
+- Direct To Consumer
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +47,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://outdoorvoices.com
+  url: https://www.outdoorvoices.com
+- type: HelpCenter
+  url: https://www.outdoorvoices.com/pages/help-center
+- type: PrivacyPolicy
+  url: https://www.outdoorvoices.com/pages/privacy-policy
+- type: TermsOfService
+  url: https://www.outdoorvoices.com/pages/terms-of-use
+- type: DomainSecurity
+  url: security/outdoor-voices-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
